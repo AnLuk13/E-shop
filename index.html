@@ -12,28 +12,17 @@
     e-shop is your ultimate destination for all your shopping needs."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <title>E-Shop</title>
-    <style>
-      body {
-        background-color: azure;
-      }
-
-      .section {
-        width: 30%;
-      }
-
-      figure {
-        margin-top: 1%;
-        margin-left: 0;
-      }
-    </style>
   </head>
   <body>
     <header>
       <h1>Welcome to <abbr title="Electronic Shop">E-Shop</abbr></h1>
     </header>
 
-    <nav>
+    <nav><h3><u>Find a section</u></h3>
       <ul>
         <li><a href="#products">Products</a></li>
         <li><a href="#contacts">Contacts</a></li>
@@ -59,12 +48,12 @@
 
     <main>
       <section id="products">
-        <h2>Clothes</h2>
-        <table style="border-collapse: collapse" border="2px" width="350px">
-          <thead style="font-style: italic">
+        <h2><u>More about clothes</u></h2>
+        <table>
+          <thead>
             <tr>
-              <th><em>Product</em></th>
-              <th><em>Description</em></th>
+              <th><em>Products</em></th>
+              <th><em>About</em></th>
               <th><em>Price</em></th>
             </tr>
           </thead>
@@ -88,45 +77,63 @@
         </table>
       </section>
 
-      <figure>
-        <img
-          src="/E-shop/images/shopping.jpg"
-          alt="Image didnt load"
-          width="350px"
-        />
-        <figcaption>Providing online shopping, dont hesitate to buy</figcaption>
-      </figure>
+      <div class="clothes">
+        <img src="/assets/img/tshirt.jpeg" alt="tshirt" width="350">
+        <img src="/assets/img/jeans.JPG" alt="jeans" width="200">
+        <img src="/assets/img/dress.jpg" alt="dress" width="200 ">
+      </div>
 
-      <video controls width="350" src="/E-shop/videos/clothes.mp4">
+      <video
+        controls
+        width="900"
+        src="/assets/videos/clothes.mp4"
+        type="video/mp4"
+      >
         Sorry your browser doesnt support the video, please
-        <a href="https://www.youtube.com/watch?v=O1PiTXZlEz0">download it</a>
+        <a href="https://www.youtube.com/watch?v=O1PiTXZlEz0" target="_blank">download it</a>
       </video>
+    </main>
 
+    <footer>
       <section id="contacts">
-        <h2>Contacts</h2>
+        <h2><u>Contacts</u></h2>
         <p>For any inquiries, please contact us:</p>
-        <p>
-          Email: <a href="mailto:info@example.com">antoniolupu72@gmail.com</a>
+        <form action="" class="form-style">
+          <label for="email">E-mail:</label>
+          <input type="text" name="email" id="email" placeholder="Example@mail.com">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Antonio">
+          <label for="message">Your message:</label>
+          <textarea name="message" id="message" rows="1" placeholder="Leave a comment"></textarea>
+          <label for="rating">How would you rate our shop?</label>
+          <select name="rating" id="rating">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+          
         </p>
         <p>Phone: <a href="">+1 (xxx) 567-890</a></p>
       </section>
 
       <section id="addresses">
-        <h2>Addresses</h2>
+        <h3><u>Addresses</u></h3>
         <ul>
           <li>
-            <h3>Chisinau</h3>
+            <h4>Chisinau</h4>
             <p>Stefan cel Mare Street</p>
           </li>
           <li>
-            <h3>Bucharest</h3>
+            <h4>Bucharest</h4>
             <p>Mihai Viteazul Street</p>
           </li>
         </ul>
       </section>
-    </main>
 
-    <footer>
       <p>&copy; 2023 E-Shop. All rights reserved.</p>
     </footer>
   </body>

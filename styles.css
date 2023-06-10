@@ -1,0 +1,44 @@
+body {
+  background-color: azure;
+  margin: auto;
+  max-width: 900px;
+}
+
+header {
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+}
+.form-style {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+figure {
+  margin-top: 1%;
+  margin-left: 0;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid;
+  width: 900px;
+  margin: auto;
+}
+
+thead {
+  font-style: italic;
+}
+
+.clothes {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 25px;
+}
