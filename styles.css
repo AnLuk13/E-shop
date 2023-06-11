@@ -1,5 +1,10 @@
 body {
-  background-color: azure;
+  background: repeating-linear-gradient(
+    225deg,
+    #888888 0%,
+    #9090b7 50%,
+    #a8f0ff 100%
+  );
   margin: auto;
   max-width: 900px;
 }
@@ -31,6 +36,7 @@ td {
   border: 1px solid;
   width: 900px;
   margin: auto;
+  text-align: center;
 }
 
 thead {
@@ -41,4 +47,10 @@ thead {
   display: flex;
   justify-content: space-between;
   margin: 25px 0 25px;
+}
+
+.img {
+  box-shadow: 0px 0px 20px rgb(138, 138, 138);
+  border: 1px solid gray;
+  border-radius: 15px;
 }
