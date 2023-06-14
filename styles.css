@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: repeating-linear-gradient(
     225deg,
@@ -5,12 +8,19 @@ body {
     #9090b7 50%,
     #a8f0ff 100%
   );
+  margin: 0 0 0;
+}
+
+.body-part {
   margin: auto;
+  margin-top: 50px;
   max-width: 900px;
 }
 
 header {
   text-align: center;
+  background-color: rgba(252, 252, 252, 0.6);
+  border-radius: 0 0 15px 15px;
 }
 
 video {
@@ -54,3 +64,35 @@ thead {
   border: 1px solid gray;
   border-radius: 15px;
 }
+
+.title {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.links {
+  vertical-align: middle;
+  display: flex;
+  gap: 15px;
+  font-size: 17px;
+}
+
+.navbar-links {
+  color: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #9090b7;
+}
+
+.nav-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* testing!
+.navbar-links:not(:last-child)::after {
+  content: "";
+} */
