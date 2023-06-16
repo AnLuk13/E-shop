@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background: repeating-linear-gradient(
     225deg,
@@ -27,6 +28,7 @@ video {
   display: block;
   margin: 0 auto;
 }
+
 .form-style {
   gap: 10px;
   display: flex;
@@ -57,6 +59,7 @@ thead {
   display: flex;
   justify-content: space-between;
   margin: 25px 0 25px;
+  z-index: 1;
 }
 
 .img {
@@ -68,6 +71,7 @@ thead {
 .title {
   margin: 0;
   vertical-align: middle;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .links {
@@ -90,9 +94,41 @@ thead {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 /* testing!
 .navbar-links:not(:last-child)::after {
   content: "";
 } */
+
+.img-box {
+  position: relative;
+}
+
+.img-box:hover .img {
+  transition: 0.5s ease;
+  opacity: 0.3;
+}
+
+.img-box:hover a {
+  opacity: 1;
+}
+
+.img-box a {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  background-color: #04aa6d;
+  padding: 16px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
