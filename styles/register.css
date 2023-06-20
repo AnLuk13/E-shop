@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
 body {
+  font-family: "Fira Sans", sans-serif;
   background: repeating-linear-gradient(
-    1005deg,
+    105deg,
     #888888 0,
     #9090b7 50%,
     #a8f0ff 100%
