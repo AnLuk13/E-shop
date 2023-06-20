@@ -83,7 +83,7 @@
         <div class="clothes">
           <div class="img-box">
             <img
-              class="img"
+              class="clothing-item-img"
               src="/assets/img/tshirt.jpeg"
               alt="tshirt"
               width="374"
@@ -96,7 +96,7 @@
           </div>
           <div class="img-box">
             <img
-              class="img"
+              class="clothing-item-img"
               src="/assets/img/jeans.JPG"
               alt="jeans"
               width="200"
@@ -107,7 +107,7 @@
           </div>
           <div class="img-box">
             <img
-              class="img"
+              class="clothing-item-img"
               src="/assets/img/dress.jpg"
               alt="dress"
               width="200 "
@@ -137,37 +137,47 @@
         <section id="contacts">
           <h2><u>Contacts</u></h2>
           <p>For any inquiries, please contact us:</p>
-          <form action="" class="form-style">
-            <label for="email">E-mail:</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Example@mail.com"
-            />
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Antonio" />
-            <label for="message">Your message:</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="1"
-              placeholder="Leave a comment"
-            ></textarea>
-            <label for="rating">How would you rate our shop?</label>
-            <select name="rating" id="rating">
-              <option value="Excellent">Excellent</option>
-              <option value="Good">Good</option>
-              <option value="Average">Average</option>
-              <option value="Fair">Fair</option>
-              <option value="Poor">Poor</option>
-            </select>
-            <button type="submit">Submit</button>
-          </form>
-
-          <p>Phone: <a href="">+1 (xxx) 567-890</a></p>
+          <div class="contacts-class">
+            <form action="" class="form-style">
+              <textarea
+                name="message"
+                id="message"
+                rows="2"
+                placeholder="Leave a comment"
+              ></textarea>
+              <label for="rating">How would you rate our shop?</label>
+              <select name="rating" id="rating">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+              </select>
+              <button type="submit">Submit</button>
+            </form>
+            <div class="social-media">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  class="social-media-img"
+                  src="/assets/img/facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a href="https://www.whatsapp.com/?lang=en" target="_blank"
+                ><img
+                  class="social-media-img"
+                  src="/assets/img/whatsapp.svg"
+                  alt="whatsapp"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="social-media-img"
+                  src="/assets/img/instagram.svg"
+                  alt="instagram"
+              /></a>
+            </div>
+            <p>Phone: <a href="">+1 (xxx) 567-890</a></p>
+          </div>
         </section>
-
         <section id="addresses">
           <details>
             <summary><u>Addresses</u></summary>
@@ -183,7 +193,6 @@
             </ul>
           </details>
         </section>
-
         <a href="#"><p>&copy; 2023 E-Shop. All rights reserved.</p></a>
       </footer>
     </div>
