@@ -56,7 +56,8 @@
       <main>
         <section id="products">
           <h2><u>Products</u></h2>
-          <table>
+          <div class="table-container"></div>
+          <table class="table">
             <thead>
               <tr>
                 <th><em>Products</em></th>
@@ -87,10 +88,9 @@
         <div class="clothes">
           <div class="img-box">
             <img
-              class="clothing-item-img"
+              class="clothing-item-img item-1"
               src="/assets/img/tshirt.jpeg"
               alt="tshirt"
-              width="374"
             />
             <a
               href="https://stockx.com/search?s=yeezy+gap+balenciaga"
@@ -100,10 +100,9 @@
           </div>
           <div class="img-box">
             <img
-              class="clothing-item-img"
+              class="clothing-item-img item-2"
               src="/assets/img/jeans.JPG"
               alt="jeans"
-              width="200"
             />
             <a href="https://www.carhartt-wip.com/en/men-denim" target="_blank"
               >Buy it!</a
@@ -111,10 +110,9 @@
           </div>
           <div class="img-box">
             <img
-              class="clothing-item-img"
+              class="clothing-item-img item-2"
               src="/assets/img/dress.jpg"
               alt="dress"
-              width="200 "
             />
             <a
               href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
@@ -123,18 +121,16 @@
             >
           </div>
         </div>
-
-        <video
-          controls
-          width="900"
-          src="/assets/videos/clothes.mp4"
-          type="video/mp4"
-        >
-          Sorry your browser doesnt support the video, please
-          <a href="https://www.youtube.com/watch?v=O1PiTXZlEz0" target="_blank"
-            >download it</a
-          >
-        </video>
+        <div class="video-container">
+          <video controls src="/assets/videos/clothes.mp4" type="video/mp4">
+            Sorry your browser doesnt support the video, please
+            <a
+              href="https://www.youtube.com/watch?v=O1PiTXZlEz0"
+              target="_blank"
+              >download it</a
+            >
+          </video>
+        </div>
       </main>
 
       <footer>
