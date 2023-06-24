@@ -25,19 +25,22 @@
   </head>
   <body>
     <header class="nav-bar">
-      <h1 class="title">Welcome to E-Shop</h1>
-      <nav class="links">
-        <a class="navbar-links" href="/pages/register.html" target="_blank"
+      <h1 class="nav-bar__title">Welcome to E-Shop</h1>
+      <nav class="nav-bar-links">
+        <a
+          class="nav-bar-links__link"
+          href="/pages/register.html"
+          target="_blank"
           >Register</a
         >
-        <a class="navbar-links" href="#products">Products</a>
-        <a class="navbar-links" href="#contacts">Contacts</a>
-        <a class="navbar-links" href="#addresses">Addresses</a>
+        <a class="nav-bar-links__link" href="#products">Products</a>
+        <a class="nav-bar-links__link" href="#contacts">Contacts</a>
+        <a class="nav-bar-links__link" href="#addresses">Addresses</a>
       </nav>
     </header>
 
     <div class="body-part">
-      <div class="section">
+      <div class="description">
         <section>
           <strong>E-Marketplace</strong> is a cutting-edge e-commerce platform
           designed to revolutionize your shopping experience. With a wide range
@@ -54,10 +57,10 @@
       </div>
 
       <main>
-        <section id="products">
+        <section id="products" class="products">
           <h2><u>Products</u></h2>
           <div class="table-container"></div>
-          <table class="table">
+          <table class="table-container__table">
             <thead>
               <tr>
                 <th><em>Products</em></th>
@@ -85,42 +88,47 @@
           </table>
         </section>
 
-        <div class="clothes">
-          <div class="img-box">
-            <img
-              class="clothing-item-img item-1"
-              src="/assets/img/tshirt.jpeg"
-              alt="tshirt"
-            />
-            <a
-              href="https://stockx.com/search?s=yeezy+gap+balenciaga"
-              target="_blank"
-              >Buy it!</a
-            >
+        <section class="store">
+          <div class="clothes">
+            <div class="clothes__img-box">
+              <img
+                class="clothes__clothing-item-img item-1"
+                src="/assets/img/tshirt.jpeg"
+                alt="tshirt"
+              />
+              <a
+                href="https://stockx.com/search?s=yeezy+gap+balenciaga"
+                target="_blank"
+                >Buy it!</a
+              >
+            </div>
+            <div class="clothes__img-box">
+              <img
+                class="clothes__clothing-item-img item-2"
+                src="/assets/img/jeans.JPG"
+                alt="jeans"
+              />
+              <a
+                href="https://www.carhartt-wip.com/en/men-denim"
+                target="_blank"
+                >Buy it!</a
+              >
+            </div>
+            <div class="clothes__img-box">
+              <img
+                class="clothes__clothing-item-img item-3"
+                src="/assets/img/dress.jpg"
+                alt="dress"
+              />
+              <a
+                href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
+                target="_blank"
+                >Buy it!</a
+              >
+            </div>
           </div>
-          <div class="img-box">
-            <img
-              class="clothing-item-img item-2"
-              src="/assets/img/jeans.JPG"
-              alt="jeans"
-            />
-            <a href="https://www.carhartt-wip.com/en/men-denim" target="_blank"
-              >Buy it!</a
-            >
-          </div>
-          <div class="img-box">
-            <img
-              class="clothing-item-img item-2"
-              src="/assets/img/dress.jpg"
-              alt="dress"
-            />
-            <a
-              href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
-              target="_blank"
-              >Buy it!</a
-            >
-          </div>
-        </div>
+        </section>
+
         <div class="video-container">
           <video controls src="/assets/videos/clothes.mp4" type="video/mp4">
             Sorry your browser doesnt support the video, please
@@ -137,40 +145,42 @@
         <section id="contacts">
           <h2><u>Contacts</u></h2>
           <p>For any inquiries, please contact us:</p>
-          <div class="contacts-class">
-            <form action="" class="form-style">
-              <textarea
-                name="message"
-                id="message"
-                rows="2"
-                placeholder="Leave a comment"
-              ></textarea>
-              <label for="rating">How would you rate our shop?</label>
-              <select name="rating" id="rating">
-                <option value="Excellent">Excellent</option>
-                <option value="Good">Good</option>
-                <option value="Average">Average</option>
-                <option value="Fair">Fair</option>
-                <option value="Poor">Poor</option>
-              </select>
-              <button type="submit">Submit</button>
+          <div class="contacts">
+            <form action="" class="footer-form">
+              <fieldset class="footer-fieldset">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="2"
+                  placeholder="Leave a comment"
+                ></textarea>
+                <label for="rating">How would you rate our shop?</label>
+                <select name="rating" id="rating">
+                  <option value="Excellent">Excellent</option>
+                  <option value="Good">Good</option>
+                  <option value="Average">Average</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Poor">Poor</option>
+                </select>
+                <button type="submit">Submit</button>
+              </fieldset>
             </form>
             <div class="social-media">
               <a href="https://www.facebook.com" target="_blank"
                 ><img
-                  class="social-media-img"
+                  class="social-media__img"
                   src="/assets/img/facebook.svg"
                   alt="facebook"
               /></a>
               <a href="https://www.whatsapp.com/?lang=en" target="_blank"
                 ><img
-                  class="social-media-img"
+                  class="social-media__img"
                   src="/assets/img/whatsapp.svg"
                   alt="whatsapp"
               /></a>
               <a href="https://www.instagram.com/" target="_blank"
                 ><img
-                  class="social-media-img"
+                  class="social-media__img"
                   src="/assets/img/instagram.svg"
                   alt="instagram"
               /></a>

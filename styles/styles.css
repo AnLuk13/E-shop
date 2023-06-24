@@ -59,36 +59,48 @@ body {
   max-width: 900px;
 }
 
-header {
-  text-align: center;
+.nav-bar {
   background-color: rgba(252, 252, 252, 0.6);
   border-radius: 0 0 15px 15px;
-}
-
-.contacts-class {
-  gap: 10px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  max-width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
-.form-style {
-  gap: 10px;
+.nav-bar-links__link {
+  color: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #9090b7;
+}
+
+.nav-bar__title {
+  font-family: "Kalam", cursive;
+  margin: 0;
+}
+
+.nav-bar-links {
   display: flex;
-  flex-direction: column;
+  gap: 15px;
+  font-size: 17px;
 }
 
-.social-media {
+.table-container {
   display: flex;
-  justify-content: left;
-  gap: 10px;
 }
 
-.social-media-img {
-  width: 35px;
+.table-container__table {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
 }
 
-table,
+.table-container__table,
 th,
 td {
   border-collapse: collapse;
@@ -111,7 +123,7 @@ thead {
   z-index: 1;
 }
 
-.clothing-item-img {
+.clothes__clothing-item-img {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
@@ -121,67 +133,21 @@ thead {
   border-radius: 15px;
 }
 
-.title {
-  font-family: "Kalam", cursive;
-  margin: 0;
-  vertical-align: middle;
-}
-
-.links {
-  vertical-align: middle;
-  display: flex;
-  gap: 15px;
-  font-size: 17px;
-}
-
-.navbar-links {
-  color: whitesmoke;
-  padding: 5px 10px;
-  border-radius: 20px;
-  text-decoration: none;
-  background-color: #9090b7;
-}
-
-.nav-bar {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.table-container {
-  display: flex;
-}
-
-.table {
-  flex-grow: 1;
-  flex-shrink: 1;
-  width: 100%;
-}
-
 /* testing!
 .navbar-links:not(:last-child)::after {
   content: "";
 } */
 
-.img-box {
+.clothes__img-box {
   position: relative;
 }
 
-.img-box:hover .clothing-item-img {
+.clothes__img-box:hover .clothes__clothing-item-img {
   transition: 0.5s ease;
   opacity: 0.3;
 }
 
-.img-box:hover a {
-  opacity: 1;
-}
-
-.img-box a {
-  transition: 0.5s ease;
+.clothes__img-box a {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -196,6 +162,11 @@ thead {
   font-size: 18px;
 }
 
+.clothes__img-box:hover a {
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
 .video-container {
   display: flex;
 }
@@ -204,7 +175,32 @@ video {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
-  margin: 0 auto;
+}
+
+.footer-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.social-media__img {
+  width: 35px;
 }
 
 .rights {
