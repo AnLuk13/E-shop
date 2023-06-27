@@ -68,7 +68,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .nav-bar-links__link {
@@ -90,9 +90,10 @@ body {
   font-size: 17px;
 }
 
+/* instead of bootstrap!
 .table-container {
   display: flex;
-}
+} */
 
 .table-container__table {
   flex-grow: 1;
@@ -120,12 +121,10 @@ thead {
   display: flex;
   justify-content: space-between;
   margin: 25px 0 25px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .clothes__clothing-item-img {
-  flex-grow: 1;
-  flex-shrink: 1;
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 20px rgb(138, 138, 138);
@@ -139,6 +138,7 @@ thead {
 } */
 
 .clothes__img-box {
+  flex-shrink: 1;
   position: relative;
 }
 
@@ -167,9 +167,10 @@ thead {
   opacity: 1;
 }
 
+/* instead of bootstrap!
 .video-container {
   display: flex;
-}
+} */
 
 video {
   flex-grow: 1;
@@ -179,8 +180,8 @@ video {
 
 .footer-fieldset {
   border: none;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   gap: 10px;
   display: flex;
   flex-direction: column;
