@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   background: repeating-linear-gradient(
@@ -9,7 +13,7 @@ body {
     #a8f0ff 100%
   );
   margin-top: 8em;
-  margin-bottom: 48vh;
+  overflow: hidden;
 }
 
 .form-title {
@@ -19,11 +23,39 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  animation-name: title;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.05, 1.04, 1, 0.98);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes title {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .registration-form {
   max-width: 400px;
   margin: 0 auto;
+  animation-name: reg-form;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes reg-form {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 label {
