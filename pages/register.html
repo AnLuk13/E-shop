@@ -4,31 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/register.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/registration.ico" />
+    <script src="/app.js" defer></script>
     <title>Register</title>
   </head>
   <body>
-    <h1>Registration:</h1>
-    <form class="registration-form">
+    <h1 class="form-title">
+      Registration:
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="32px"
+        viewBox="0 0 576 512"
+      >
+        <path
+          d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"
+        />
+      </svg>
+    </h1>
+    <form
+      class="registration-form"
+      action="/form-data.html"
+      method="GET"
+      target="_blank"
+    >
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="E-mail"
+        required
+        autofocus
+      />
+
       <label for="name">First Name:</label>
-      <input type="text" id="name" name="name" required />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+        minlength="1"
+        maxlength="25"
+        autocomplete="off"
+      />
 
       <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" required />
+      <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        placeholder="Last name"
+        required
+        minlength="1"
+        maxlength="25"
+        autocomplete="off"
+      />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
 
       <div class="terms">
-        <input type="radio" id="accept-terms" name="terms" required />
+        <input type="checkbox" id="accept-terms" name="terms" required />
         <p>
           <a href="https://www.termsandconditionsgenerator.com/" target="_blank"
             >I accept the terms and conditions</a
           >
         </p>
       </div>
-
-      <button type="submit">Register</button>
+      <button id="submit" type="submit">Register</button>
     </form>
   </body>
 </html>

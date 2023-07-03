@@ -2,44 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
-    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
-    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-}
-
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 65px;
 }
 
 body {
@@ -51,12 +16,14 @@ body {
     #a8f0ff 100%
   );
   margin: 0 0 0;
+  margin-bottom: 500px;
 }
 
 .body-part {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 70px;
   max-width: 900px;
+  /* padding-top: 20px; */
 }
 
 .nav-bar {
@@ -91,7 +58,7 @@ body {
   font-size: 17px;
 }
 
-/* instead of bootstrap!
+/* tableinstead of bootstrap!
 .table-container {
   display: flex;
 } */
@@ -142,6 +109,7 @@ thead {
   flex-shrink: 1;
   position: relative;
   overflow: hidden;
+  transition: 0.5s ease;
 }
 
 .clothes__img-box:hover {
@@ -149,7 +117,6 @@ thead {
 }
 
 .clothes__img-box:hover .clothes__clothing-item-img {
-  transition: 0.5s ease;
   opacity: 0.3;
 }
 
@@ -166,10 +133,10 @@ thead {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  transition: 0.5s ease;
 }
 
 .clothes__img-box:hover a {
-  transition: 0.5s ease;
   opacity: 1;
 }
 
