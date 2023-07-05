@@ -28,11 +28,12 @@
       rel="stylesheet"
     />
 
-    <title>E-Shop</title>
+    <title>Sportus e-shop</title>
   </head>
   <body>
     <header class="nav-bar z-2">
-      <h1 class="nav-bar__title">Welcome to E-Shop</h1>
+      <h1 class="nav-bar__title mb-0"><a href="#">Sportus</a></h1>
+      <img src="/assets/img/logo.svg" alt="logo" />
       <nav class="nav-bar-links">
         <a
           class="nav-bar-links__link"
@@ -40,33 +41,32 @@
           target="_blank"
           >Register</a
         >
-        <a class="nav-bar-links__link" href="#products">Products</a>
+        <a class="nav-bar-links__link fast-transition" href="#products"
+          >Products</a
+        >
+        <a class="nav-bar-links__link" href="#about">About</a>
         <a class="nav-bar-links__link" href="#contacts">Contacts</a>
-        <a class="nav-bar-links__link" href="#addresses">Addresses</a>
       </nav>
     </header>
 
     <div class="body-part">
-      <div class="description">
-        <section>
-          <strong>E-Marketplace</strong> is a cutting-edge e-commerce platform
-          designed to revolutionize your shopping experience. With a wide range
-          of products, seamless navigation, and convenient features, our e-shop
-          is your ultimate destination for all your shopping needs.
-          <p>
-            <q>
-              Welcome to our e-shop, where shopping meets convenience and
-              endless possibilities. Discover a world of products at your
-              fingertips and indulge in the joy of online shopping.
-            </q>
-          </p>
-        </section>
-      </div>
-
       <main>
+        <div class="d-flex justify-content-center mt-5 mb-4">
+          <q class="fs-5"
+            >Discover a world of products at your fingertips and indulge in the
+            joy of online shopping.</q
+          >
+        </div>
+        <div class="welcome-content">
+          <div class="welcome-content__title">Best option sportwear equipment</div>
+          <div class="buy-btn"><a href="/pages/products.html">Explore</a></div>
+          <img class="welcome-content__img" src="/assets/img/models1.png" alt="">
+          <img class="welcome-content__img" src="/assets/img/models2.png" alt="">
+        </div>
+        
         <section id="products" class="products">
-          <h2><u>Products</u></h2>
-          <div class="table-container d-flex">
+          <h2 class="mb-0"><u>Products</u></h2>
+          <!-- <div class="table-container d-flex">
             <table class="table-container__table">
               <thead>
                 <tr>
@@ -93,52 +93,55 @@
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div>-->
+          <section class="store">
+            <div class="store__anotation">TOP SELLERS</div>
+            <div class="horizontal-line"></div>
+            <div class="clothes z-1">
+              <div class="clothes__img-box">
+                <img
+                  class="clothes__clothing-item-img item-1"
+                  src="/assets/img/tshirt.jpeg"
+                  alt="tshirt"
+                />
+                <a
+                  href="https://stockx.com/search?s=yeezy+gap+balenciaga"
+                  target="_blank"
+                  >Buy it!</a
+                >
+              </div>
+              <div class="clothes__img-box">
+                <div class="clothes_img-box__discount">SALES</div>
+                <img
+                  class="clothes__clothing-item-img item-2"
+                  src="/assets/img/jeans.JPG"
+                  alt="jeans"
+                />
+                <a
+                  href="https://www.carhartt-wip.com/en/men-denim"
+                  target="_blank"
+                  >Buy it!</a
+                >
+              </div>
+              <div class="clothes__img-box">
+                <img
+                  class="clothes__clothing-item-img item-3"
+                  src="/assets/img/dress.jpg"
+                  alt="dress"
+                />
+                <a
+                  href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
+                  target="_blank"
+                  >Buy it!</a
+                >
+              </div>
+            </div>
+            <div class="all-items-link">
+              <a href="/pages/products.html">Show all items</a>
+            </div>
+          </section>
         </section>
-
-        <section class="store">
-          <div class="clothes z-1">
-            <div class="clothes__img-box">
-              <img
-                class="clothes__clothing-item-img item-1"
-                src="/assets/img/tshirt.jpeg"
-                alt="tshirt"
-              />
-              <a
-                href="https://stockx.com/search?s=yeezy+gap+balenciaga"
-                target="_blank"
-                >Buy it!</a
-              >
-            </div>
-            <div class="clothes__img-box">
-              <div class="clothes_img-box__discount">SALES</div>
-              <img
-                class="clothes__clothing-item-img item-2"
-                src="/assets/img/jeans.JPG"
-                alt="jeans"
-              />
-              <a
-                href="https://www.carhartt-wip.com/en/men-denim"
-                target="_blank"
-                >Buy it!</a
-              >
-            </div>
-            <div class="clothes__img-box">
-              <img
-                class="clothes__clothing-item-img item-3"
-                src="/assets/img/dress.jpg"
-                alt="dress"
-              />
-              <a
-                href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
-                target="_blank"
-                >Buy it!</a
-              >
-            </div>
-          </div>
-        </section>
-
-        <div class="video-container d-flex">
+        <div class="video-container d-flex mb-5">
           <video controls src="/assets/videos/clothes.mp4" type="video/mp4">
             Sorry your browser doesnt support the video, please
             <a
@@ -151,27 +154,54 @@
       </main>
 
       <footer>
-        <section id="contacts">
+        <section id="about" class="mb-5 position-relative">
+          <h2><u>About</u></h2>
+          <div class="about-box"></div>
+          <div class="description">
+            <div class="description__container">
+              <p>About us.</p>
+              <span class="text-white-smoke"><strong>Sportus</strong> is a cutting-edge e-commerce platform
+              designed to revolutionize your shopping experience.</span>
+            </div>
+            <div class="description__container">
+              <p>Worldwide.</p>
+              With a wide range of products, seamless navigation, and convenient
+              features, our e-shop is your ultimate destination for all your
+              shopping needs.
+            </div>
+            <div class="description__container">
+              <p>Innovation.</p>
+              Welcome to our e-shop, where shopping meets convenience and
+              endless possibilities.
+            </div>
+          </div>
+        </section>
+
+        <section class="position-relative mb-5" id="contacts">
           <h2><u>Contacts</u></h2>
-          <p>For any inquiries, please contact us:</p>
-          <div class="contacts">
+          <div class="comment-form-background"></div>
+          <div class="mt-4 mb-2 fs-5 text-center comment-form-box__title">
+            For any inquiries please contact us, or find us here:
+          </div>
+          <div class="comment-form-box">
             <form action="" class="footer-form">
               <fieldset class="footer-fieldset m-0 p-0">
                 <textarea
+                  class="textarea mb-4"
                   name="message"
                   id="message"
-                  rows="2"
+                  rows="4"
                   placeholder="Leave a comment"
                 ></textarea>
                 <label for="rating">How would you rate our shop?</label>
-                <select name="rating" id="rating">
+                <select class="mb-4" name="rating" id="rating">
                   <option value="Excellent">Excellent</option>
                   <option value="Good">Good</option>
                   <option value="Average">Average</option>
                   <option value="Fair">Fair</option>
                   <option value="Poor">Poor</option>
                 </select>
-                <button type="submit">Submit</button>
+                <button class="submit-btn" type="submit">Submit</button>
               </fieldset>
             </form>
             <div class="social-media">
@@ -194,29 +224,32 @@
                   alt="instagram"
               /></a>
             </div>
-            <p>Phone: <a href="">+1 (xxx) 567-890</a></p>
+            <div class="adresses">
+              <h5 class="text-center text-decoration-underline">Addresses:</h5>
+              <ul>
+                <li>
+                  <h6>Chisinau</h6>
+                  <p>Stefan cel Mare Street</p>
+                </li>
+                <li>
+                  <h6>Bucharest</h6>
+                  <p>Mihai Viteazul Street</p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section id="addresses">
-          <details>
-            <summary><u>Addresses</u></summary>
-            <ul>
-              <li>
-                <h4>Chisinau</h4>
-                <p>Stefan cel Mare Street</p>
-              </li>
-              <li>
-                <h4>Bucharest</h4>
-                <p>Mihai Viteazul Street</p>
-              </li>
-            </ul>
-          </details>
-        </section>
-        <section class="rights">
-          <a href="#">&copy; 2023 E-Shop. All rights reserved.</a
-          ><span class="material-icons"> admin_panel_settings </span>
         </section>
       </footer>
     </div>
+    <section class="bottom-bar">
+      <div class="copyrights">
+        &copy; 2023 E-Shop. All rights reserved.</a
+        ><span class="material-icons"> admin_panel_settings </span>
+      </div>
+      <div>
+        <h1 class="bottom-bar__title mb-0"><a href="#">Sportus</a></h1>
+      </div>
+      <div class="phone">Phone: +(373)000 - XXX - 777</div>
+    </section>
   </body>
 </html>

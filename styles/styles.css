@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
 html {
@@ -7,29 +7,61 @@ html {
   scroll-padding-top: 65px;
 }
 
+.horizontal-line {
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}
+
+.submit-btn {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #c0b8ab 0%,
+    #685b4d 51%,
+    #c0b8ab 100%
+  );
+  background-size: 200% auto;
+  border-radius: 7px;
+  border: 1px solid #95928e;
+  transition: 0.5s ease;
+  padding: 4px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover,
+.buy-btn a:hover {
+  background-position: right center;
+}
+
+.text-white-smoke {
+  color: #d6d3ce;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   background: repeating-linear-gradient(
-    225deg,
-    #888888 0%,
-    #9090b7 50%,
-    #a8f0ff 100%
+    90deg,
+    #ebebe6 0%,
+    #c9c5bf 40%,
+    #c9c5bf 60%,
+    #ebebe6 100%
   );
   margin: 0 0 0;
-  margin-bottom: 600px;
+  margin-bottom: 200px;
 }
 
 .body-part {
   margin: auto;
-  margin-top: 70px;
+  margin-top: 100px;
   max-width: 900px;
   /* padding-top: 20px; */
 }
 
 .nav-bar {
-  background-color: rgba(252, 252, 252, 0.6);
+  background-color: #b7b3af;
   border-radius: 0 0 15px 15px;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,26 +72,82 @@ body {
 }
 
 .nav-bar-links__link {
-  color: black;
-  padding: 5px 10px;
+  color: white;
+  padding: 5px 15px;
   border-radius: 20px;
   text-decoration: none;
-  background-color: #9090b7;
+  background-color: #95928e;
+  transition: 0.3s ease;
 }
 
 .nav-bar-links__link:hover {
-  color: white;
+  background-color: #7f7265;
 }
 
 .nav-bar__title {
-  font-family: "Kalam", cursive;
+  width: 400px;
+}
+
+.nav-bar__title a {
+  font-family: "Titillium Web", sans-serif;
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .nav-bar-links {
+  width: 400px;
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
   font-size: 17px;
+}
+
+.welcome-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.welcome-content__title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+  width: 280px;
+  text-align: center;
+}
+
+.welcome-content__img {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.buy-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+}
+
+.buy-btn a {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #c0b8ab 0%,
+    #685b4d 51%,
+    #c0b8ab 100%
+  );
+  background-size: 200% auto;
+  border-radius: 17px;
+  border: 1px solid #95928e;
+  transition: 0.7s ease;
+  padding: 15px 30px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* tableinstead of bootstrap!
@@ -67,7 +155,7 @@ body {
   display: flex;
 } */
 
-.table-container__table {
+/* .table-container__table {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
@@ -85,6 +173,15 @@ td {
 
 thead {
   font-style: italic;
+} */
+
+.store {
+  margin: 10px 0 25px;
+}
+
+.store__anotation {
+  font-size: 40px;
+  text-align: center;
 }
 
 .clothes {
@@ -92,7 +189,8 @@ thead {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 25px 0 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   /* z-index: 1; */
 }
 
@@ -100,8 +198,7 @@ thead {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 20px rgb(138, 138, 138);
-  border: 1px solid gray;
-  border-radius: 15px;
+  border: 1px solid #95928e;
 }
 
 /* testing!
@@ -132,11 +229,18 @@ thead {
   transform: translate(-50%, -50%);
   text-align: center;
   border-radius: 20px;
-  background-color: #04aa6d;
-  padding: 16px 25px;
+  border: 1px solid #95928e;
+  background-image: linear-gradient(
+    to right,
+    #c0b8ab 0%,
+    #685b4d 51%,
+    #c0b8ab 100%
+  );
+  background-size: 200% auto;
+  padding: 16px 20px;
   text-decoration: none;
-  color: white;
-  font-size: 18px;
+  color: black;
+  font-size: 20px;
   transition: 0.5s ease;
 }
 
@@ -145,13 +249,14 @@ thead {
 }
 
 .clothes__img-box a:hover {
-  background-color: rgb(69, 221, 69);
+  background-position: right center;
 }
 
 .clothes_img-box__discount {
   position: absolute;
   background-color: yellow;
   color: black;
+  border: 1px solid #95928e;
   font-weight: bold;
   font-size: 18px;
   width: 220px;
@@ -160,6 +265,26 @@ thead {
   top: 20px;
   right: -75px;
   z-index: 1;
+}
+
+.all-items-link {
+  display: flex;
+  justify-content: end;
+}
+
+.all-items-link a {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.all-items-link a:hover {
+  color: rgb(112, 112, 112);
+}
+
+.all-items-link::after {
+  content: "»";
+  opacity: 0;
+  transition: 0.5s;
 }
 
 /* instead of bootstrap!
@@ -181,30 +306,122 @@ video {
   border: none;
   /* padding: 0;
   margin: 0; */
-  gap: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.contacts {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  max-width: 30%;
+.comment-form-background {
+  background-color: #c9c5bf;
+  border: 1px solid #c0b8ab;
+  border-radius: 5px;
+  height: 330px;
+  filter: blur(0.5px);
+  opacity: 0.8;
+}
+
+.textarea {
+  border-radius: 9px;
+}
+
+.comment-form-box {
+  width: 400px;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+}
+
+.comment-form-box__title {
+  width: 470px;
+  position: absolute;
+  top: 9%;
+  left: 1%;
 }
 
 .social-media {
+  width: 200px;
+  position: absolute;
+  top: 80%;
+  left: 150%;
   display: flex;
-  justify-content: left;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .social-media__img {
-  width: 35px;
+  width: 45px;
 }
 
-.rights {
+.adresses {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 150%;
+}
+
+.adresses ul {
+  padding-left: 0;
+}
+
+.about-box {
+  background-color: black;
+  border: 1px solid #c0b8ab;
+  border-radius: 5px;
+  height: 300px;
+  filter: blur(0.5px);
+}
+
+.description {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gainsboro;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.description__container {
+  width: 180px;
+  text-align: left;
+}
+
+.description__container p {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.bottom-bar {
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  display: flex;
+}
+
+.bottom-bar__title {
+  width: 200px;
+  text-align: center;
+}
+
+.bottom-bar__title a {
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.copyrights {
+  width: 300px;
   display: flex;
   align-items: center;
   margin: 10px 0;
+}
+
+.copyrights a {
+  text-decoration: none;
+  color: black;
+}
+
+.phone {
+  width: 300px;
+  text-align: end;
 }
