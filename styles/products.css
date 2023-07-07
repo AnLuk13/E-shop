@@ -1,24 +1,146 @@
-.btn-grad {
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+.buy-btn-prod a {
+  text-decoration: none;
+  color: white;
   background-image: linear-gradient(
     to right,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
+    #c0b8ab 0%,
+    #685b4d 51%,
+    #c0b8ab 100%
   );
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
   background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
+  border-radius: 15px;
+  border: 1px solid #95928e;
+  transition: 0.3s ease;
+  padding: 17px 40px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+.buy-btn-prod a:hover {
+  background-position: right center;
+}
+
+.buy-btn-prod {
+  transition: 0.5s ease;
+}
+
+.buy-btn-prod:hover {
+  transform: scale(1.1);
+}
+
+.products-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-top: 90px;
+}
+
+.products {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #95928e;
+  display: grid;
+  width: 1000px;
+  gap: 35px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  background-color: #7f7265;
+  border: 1px solid #c9c5bf;
+  height: 300px;
+  position: relative;
+}
+
+.item-1 {
+  grid-column: 1/4;
+  height: 400px;
+}
+
+.item-2 {
+  padding: 50px 30px;
+  grid-column: 4/6;
+  height: 400px;
+}
+
+.item-3 {
+  grid-column: 1/3;
+  padding: 20px 25px;
+}
+
+.item-4 {
+  grid-column: 3/6;
+}
+
+.item-5 {
+  grid-column: 1/6;
+  background-color: #f4f4f4;
+}
+
+.item-6 {
+  justify-content: space-between;
+  grid-column: 1/6;
+  height: 100px;
+  padding: 20px 200px;
+}
+
+.item-7 {
+  grid-column: 1/3;
+}
+
+.item-8 {
+  grid-column: 3/6;
+}
+
+.item-9 {
+  border: none;
+  background-color: #95928e;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/6;
+  gap: 35px;
+}
+
+.photo {
+  width: 100%;
+  position: absolute;
+}
+
+.photo-jordan-bag {
+  top: -250px;
+}
+
+.photo-duffle-bag {
+  top: -350px;
+}
+
+.photo-travis {
+  height: 100%;
+}
+
+.photo-jordan1 {
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-fleece {
+  top: -130px;
+}
+
+.text {
+  font-family: "Titillium Web", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 5px;
 }

@@ -8,9 +8,10 @@ html {
 }
 
 .horizontal-line {
+  width: 900px;
   height: 1px;
   background-color: black;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .submit-btn {
@@ -60,7 +61,6 @@ body {
 
 .nav-bar {
   background-color: #b7b3af;
-  border-radius: 0 0 15px 15px;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -122,6 +122,7 @@ body {
 }
 
 .welcome-content__img {
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);
   border: 1px solid black;
   width: 300px;
 }
@@ -143,10 +144,10 @@ body {
     #c0b8ab 100%
   );
   background-size: 200% auto;
-  border-radius: 17px;
+  border-radius: 15px;
   border: 1px solid #95928e;
-  transition: 0.7s ease;
-  padding: 15px 30px;
+  transition: 0.3s ease;
+  padding: 17px 40px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -176,7 +177,7 @@ thead {
 } */
 
 .store {
-  margin: 10px 0 25px;
+  margin: 10px 0 60px;
 }
 
 .store__anotation {
@@ -197,7 +198,7 @@ thead {
 .clothes__clothing-item-img {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 20px rgb(138, 138, 138);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border: 1px solid #95928e;
 }
 
@@ -292,10 +293,6 @@ thead {
   display: flex;
 } */
 
-.video-container {
-  margin-bottom: 20px;
-}
-
 video {
   flex-grow: 1;
   flex-shrink: 1;
@@ -317,6 +314,7 @@ video {
   height: 330px;
   filter: blur(0.5px);
   opacity: 0.8;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .textarea {
@@ -361,12 +359,13 @@ video {
   padding-left: 0;
 }
 
-.about-box {
+.about-background {
   background-color: black;
   border: 1px solid #c0b8ab;
   border-radius: 5px;
   height: 300px;
   filter: blur(0.5px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .description {
