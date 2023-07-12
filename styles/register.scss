@@ -1,3 +1,138 @@
+@import "colors";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin-top: 8em;
+  overflow: hidden;
+}
+
 .form-title {
-  color: red;
+  text-align: center;
+  color: rgb(22, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation-name: title;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.05, 1.04, 1, 0.98);
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes title {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  animation-name: reg-form;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes reg-form {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  height: 3vh;
+  width: 97%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.terms {
+  display: flex;
+  gap: 10px;
+}
+
+.registration-form {
+  [type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(29, 175, 7);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+  }
+
+  [type="submit"]:hover {
+    border: 1px solid black;
+    background-color: $light-green;
+    cursor: pointer;
+  }
+
+  .terms {
+    input[type="checkbox"] {
+      margin: 0;
+      width: 3%;
+      margin-bottom: 10px;
+      vertical-align: middle;
+    }
+
+    input[type="checkbox"]:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+  vertical-align: middle;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: purple;
+    }
+
+    &:hover {
+      color: rgb(195, 73, 150);
+    }
+  }
+}
+
+input {
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+  }
+
+  &:valid:focus {
+    border: 3px solid $green;
+  }
+
+  &:valid {
+    border: 2px solid $green;
+  }
+
+  &:focus {
+    background-color: rgb(236, 236, 236);
+  }
 }

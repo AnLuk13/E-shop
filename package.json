@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "autoprefixer": "postcss styles/register.css --use autoprefixer -d styles/autoprefixer"
+    "autoprefixer": "postcss styles/register.css --use autoprefixer -d styles/autoprefixer",
+    "watch:scss": "node-sass -w styles/register.scss styles/register.css"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
