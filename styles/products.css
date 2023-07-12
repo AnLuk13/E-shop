@@ -144,3 +144,16 @@
   border: 1px solid white;
   padding: 5px;
 }
+
+@supports not (display: grid) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    flex-basis: 48%;
+    margin: 10px;
+  }
+}
