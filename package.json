@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "autoprefixer": "postcss styles/register.css --use autoprefixer -d styles/autoprefixer"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "postcss-cli": "^10.1.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "defaults",
+    "not ie <= 11"
+  ]
+}

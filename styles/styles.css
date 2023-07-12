@@ -122,7 +122,7 @@ body {
 }
 
 .welcome-content__img {
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 12px 28px #717171, -10px -12px 28px #a6a6a6;
   border: 1px solid black;
   width: 300px;
 }
