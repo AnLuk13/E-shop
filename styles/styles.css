@@ -37,6 +37,7 @@ html {
 
 .text-white-smoke {
   color: #d6d3ce;
+  font-size: 1.03rem;
 }
 
 body {
@@ -99,7 +100,7 @@ body {
   width: 400px;
   display: flex;
   justify-content: space-between;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 
 .welcome-content {
@@ -114,7 +115,7 @@ body {
   transform: translate(-50%, -50%);
   top: 30%;
   left: 50%;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 600;
   color: black;
   width: 280px;
@@ -177,11 +178,11 @@ thead {
 } */
 
 .store {
-  margin: 10px 0 60px;
+  margin: 10px 0 30px;
 }
 
 .store__anotation {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -192,11 +193,9 @@ thead {
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 15px;
-  /* z-index: 1; */
 }
 
 .clothes__clothing-item-img {
-  width: 100%;
   height: 100%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border: 1px solid #95928e;
@@ -208,6 +207,7 @@ thead {
 } */
 
 .clothes__img-box {
+  height: 100%;
   flex-shrink: 1;
   position: relative;
   overflow: hidden;
@@ -241,7 +241,7 @@ thead {
   padding: 16px 20px;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: 0.5s ease;
 }
 
@@ -253,13 +253,13 @@ thead {
   background-position: right center;
 }
 
-.clothes_img-box__discount {
+.clothes__img-box__discount {
   position: absolute;
   background-color: yellow;
   color: black;
   border: 1px solid #95928e;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
   width: 220px;
   text-align: center;
   transform: rotate(45deg);
@@ -299,22 +299,23 @@ video {
   width: 100%;
 }
 
-.footer-fieldset {
-  border: none;
-  /* padding: 0;
-  margin: 0; */
-  display: flex;
-  flex-direction: column;
-}
-
-.comment-form-background {
+.contacts-box {
   background-color: #c9c5bf;
   border: 1px solid #c0b8ab;
   border-radius: 5px;
-  height: 330px;
-  filter: blur(0.5px);
+  height: 45.14vh;
   opacity: 0.8;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+}
+
+.contacts-box__title {
+  padding: 10px 30px;
 }
 
 .textarea {
@@ -322,24 +323,19 @@ video {
 }
 
 .comment-form-box {
-  width: 400px;
-  position: absolute;
-  top: 28%;
-  left: 2%;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
-.comment-form-box__title {
-  width: 470px;
-  position: absolute;
-  top: 9%;
-  left: 1%;
+.add-sm-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 31.46vh;
 }
 
 .social-media {
   width: 200px;
-  position: absolute;
-  top: 80%;
-  left: 150%;
   display: flex;
   justify-content: space-between;
 }
@@ -350,29 +346,20 @@ video {
 
 .adresses {
   width: 200px;
-  position: absolute;
-  top: 0;
-  left: 150%;
 }
 
 .adresses ul {
   padding-left: 0;
 }
 
-.about-background {
+.description {
+  padding: 1em;
+  justify-content: center;
   background-color: black;
   border: 1px solid #c0b8ab;
   border-radius: 5px;
   height: 300px;
-  filter: blur(0.5px);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.description {
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: gainsboro;
   display: flex;
   flex-direction: row;
@@ -382,10 +369,11 @@ video {
 .description__container {
   width: 180px;
   text-align: left;
+  font-size: 1em;
 }
 
 .description__container p {
-  font-size: 35px;
+  font-size: 2.3em;
   font-weight: 600;
 }
 
@@ -423,4 +411,61 @@ video {
 .phone {
   width: 300px;
   text-align: end;
+}
+
+@media screen and (max-width: 830px) {
+  .clothes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .clothes__clothing-item-img {
+    height: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #95928e;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .clothes {
+    height: auto;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .clothes__img-box {
+    width: 300px;
+    height: 380px;
+    flex-shrink: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  .clothes__clothing-item-img {
+    height: 380px;
+    width: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #95928e;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    object-fit: cover;
+  }
+
+  .item-1 {
+    object-position: 50% 50%;
+  }
 }
