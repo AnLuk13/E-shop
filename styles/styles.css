@@ -27,7 +27,7 @@ html {
   border: 1px solid #95928e;
   transition: 0.5s ease;
   padding: 4px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .submit-btn:hover,
@@ -103,6 +103,37 @@ body {
   font-size: 1.0625rem;
 }
 
+.second-nav-bar {
+  display: none;
+}
+
+.second-nav-bar ul {
+  padding-right: 30px;
+  text-align: right;
+  direction: rtl;
+  list-style-position: inside;
+}
+
+.second-nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.second-nav-bar ul li a:hover {
+  color: #7f7265;
+}
+
+.menu-toggle {
+  line-height: 1;
+  height: 40px;
+  color: #7f7265;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
 .welcome-content {
   position: relative;
   display: flex;
@@ -110,11 +141,14 @@ body {
   margin-bottom: 50px;
 }
 
-.welcome-content__title {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 30%;
-  left: 50%;
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-box__title {
   font-size: 3.125rem;
   font-weight: 600;
   color: black;
@@ -122,17 +156,14 @@ body {
   text-align: center;
 }
 
-.welcome-content__img {
+.welcome-box__img {
   box-shadow: 10px 12px 28px #717171, -10px -12px 28px #a6a6a6;
   border: 1px solid black;
   width: 300px;
 }
 
-.buy-btn {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 70%;
-  left: 50%;
+.welcome-box__photo {
+  width: 100%;
 }
 
 .buy-btn a {
@@ -149,7 +180,7 @@ body {
   border: 1px solid #95928e;
   transition: 0.3s ease;
   padding: 17px 40px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* tableinstead of bootstrap!
@@ -240,7 +271,7 @@ thead {
   background-size: 200% auto;
   padding: 16px 20px;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   font-size: 1.25rem;
   transition: 0.5s ease;
 }
@@ -259,7 +290,7 @@ thead {
   color: black;
   border: 1px solid #95928e;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   width: 220px;
   text-align: center;
   transform: rotate(45deg);
@@ -282,10 +313,8 @@ thead {
   color: rgb(112, 112, 112);
 }
 
-.all-items-link::after {
+.all-items-link a:hover::after {
   content: "»";
-  opacity: 0;
-  transition: 0.5s;
 }
 
 /* instead of bootstrap!
@@ -304,7 +333,6 @@ video {
   border: 1px solid #c0b8ab;
   border-radius: 5px;
   height: 45.14vh;
-  opacity: 0.8;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -353,7 +381,7 @@ video {
 }
 
 .description {
-  padding: 1em;
+  padding: 1rem;
   justify-content: center;
   background-color: black;
   border: 1px solid #c0b8ab;
@@ -367,13 +395,13 @@ video {
 }
 
 .description__container {
-  width: 180px;
+  width: 25%;
   text-align: left;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .description__container p {
-  font-size: 2.3em;
+  font-size: 2.3rem;
   font-weight: 600;
 }
 
@@ -426,13 +454,17 @@ video {
   }
 
   .clothes__clothing-item-img {
-    height: 300px;
+    height: 280px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border: 1px solid #95928e;
   }
 }
 
 @media screen and (max-width: 685px) {
+  html {
+    scroll-padding-top: 65px;
+  }
+
   .clothes {
     height: auto;
     display: flex;
@@ -444,8 +476,8 @@ video {
   }
 
   .clothes__img-box {
-    width: 300px;
-    height: 380px;
+    width: 230px;
+    height: 300px;
     flex-shrink: 1;
     position: relative;
     overflow: hidden;
@@ -453,8 +485,8 @@ video {
   }
 
   .clothes__clothing-item-img {
-    height: 380px;
-    width: 300px;
+    height: 300px;
+    width: 230px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border: 1px solid #95928e;
   }
@@ -465,7 +497,39 @@ video {
     object-fit: cover;
   }
 
-  .item-1 {
-    object-position: 50% 50%;
+  .menu-toggle {
+    display: block;
+  }
+
+  .second-nav-bar {
+    background-color: #b7b3af;
+    position: fixed;
+    top: -100px;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    transition: 1s;
+    display: block;
+    opacity: 0;
+    z-index: -3;
+    padding: 15px 0;
+  }
+
+  .menu-toggle:hover ~ .second-nav-bar {
+    top: 50px;
+    opacity: 1;
+  }
+
+  .second-nav-bar:hover {
+    top: 50px;
+    opacity: 1;
+  }
+
+  .nav-bar__title {
+    width: auto;
+  }
+
+  .nav-bar-links {
+    display: none;
   }
 }
