@@ -8,7 +8,7 @@ html {
 }
 
 .horizontal-line {
-  width: 900px;
+  width: 100%;
   height: 1px;
   background-color: black;
   margin: 10px auto;
@@ -31,7 +31,7 @@ html {
 }
 
 .submit-btn:hover,
-.buy-btn a:hover {
+.buy-btn:hover {
   background-position: right center;
 }
 
@@ -166,7 +166,7 @@ body {
   width: 100%;
 }
 
-.buy-btn a {
+.buy-btn {
   text-decoration: none;
   color: white;
   background-image: linear-gradient(
@@ -332,7 +332,7 @@ video {
   background-color: #c9c5bf;
   border: 1px solid #c0b8ab;
   border-radius: 5px;
-  height: 45.14vh;
+  height: auto;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -351,6 +351,8 @@ video {
 }
 
 .comment-form-box {
+  margin-bottom: 15px;
+  display: flex;
   justify-content: space-between;
   padding: 0 30px;
 }
@@ -358,14 +360,14 @@ video {
 .add-sm-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 31.46vh;
+  gap: 10px;
 }
 
 .social-media {
   width: 200px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .social-media__img {
@@ -386,7 +388,7 @@ video {
   background-color: black;
   border: 1px solid #c0b8ab;
   border-radius: 5px;
-  height: 300px;
+  height: auto;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   color: gainsboro;
   display: flex;
@@ -461,8 +463,25 @@ video {
 }
 
 @media screen and (max-width: 685px) {
-  html {
-    scroll-padding-top: 65px;
+  .welcome-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .welcome-box {
+    margin: 20px auto 25px;
+  }
+
+  .welcome-box__img {
+    width: 50%;
+  }
+
+  .welcome-box__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    width: auto;
+    text-align: center;
   }
 
   .clothes {
@@ -489,6 +508,48 @@ video {
     width: 230px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border: 1px solid #95928e;
+  }
+
+  .description {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .description__container {
+    width: 80%;
+  }
+
+  .contacts-box {
+    height: auto;
+  }
+
+  .comment-form-box {
+    width: 100%;
+    padding: 0%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-form {
+    width: 80%;
+  }
+
+  .footer-fieldset {
+    width: 100%;
+  }
+
+  /* .add-sm-box {
+    width: 80%;
+  } */
+
+  .adresses {
+    width: 120%;
+  }
+
+  .social-media {
+    width: 120%;
   }
 
   .item-1,
