@@ -7,6 +7,10 @@ html {
   scroll-padding-top: 65px;
 }
 
+.checkbox-container {
+  display: none;
+}
+
 .horizontal-line {
   width: 100%;
   height: 1px;
@@ -540,10 +544,6 @@ video {
     width: 100%;
   }
 
-  /* .add-sm-box {
-    width: 80%;
-  } */
-
   .adresses {
     width: 120%;
   }
@@ -558,33 +558,49 @@ video {
     object-fit: cover;
   }
 
+  .checkbox-container {
+    display: flex;
+  }
+
   .menu-toggle {
     display: block;
   }
 
+  .burger {
+    transition: 0.5s ease;
+  }
+
+  /* .burger:hover {
+    transform: rotate(90deg);
+  } */
+
   .second-nav-bar {
     background-color: #b7b3af;
     position: fixed;
-    top: -100px;
+    top: -150px;
     right: 0;
     width: 100%;
     height: 120px;
     transition: 1s;
     display: block;
     opacity: 0;
-    z-index: -3;
+    z-index: 300;
     padding: 15px 0;
   }
 
-  .menu-toggle:hover ~ .second-nav-bar {
+  #check {
+    display: none;
+  }
+
+  #check:checked ~ .second-nav-bar {
     top: 50px;
     opacity: 1;
   }
-
+  /* 
   .second-nav-bar:hover {
     top: 50px;
     opacity: 1;
-  }
+  } */
 
   .nav-bar__title {
     width: auto;
