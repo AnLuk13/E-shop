@@ -33,6 +33,18 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.ico" />
     <link
@@ -145,8 +157,8 @@
           <div class="store">
             <div class="store__anotation">TOP SELLERS</div>
             <div class="horizontal-line"></div>
-            <div class="clothes z-1">
-              <div class="clothes__img-box">
+            <ul class="clothes z-1 slider">
+              <li class="clothes__img-box">
                 <picture>
                   <source
                     media="(max-width:685px)"
@@ -158,26 +170,29 @@
                     alt="tshirt"
                   />
                 </picture>
+
                 <a
                   href="https://stockx.com/search?s=yeezy+gap+balenciaga"
                   target="_blank"
                   >Buy it!</a
                 >
-              </div>
-              <div class="clothes__img-box">
-                <div class="clothes__img-box__discount">SALES</div>
-                <img
-                  class="clothes__clothing-item-img item-2"
-                  src="/assets/img/jeans.JPG"
-                  alt="jeans"
-                />
-                <a
-                  href="https://www.carhartt-wip.com/en/men-denim"
-                  target="_blank"
-                  >Buy it!</a
-                >
-              </div>
-              <div class="clothes__img-box">
+              </li>
+              <li class="clothes__img-box">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    class="clothes__clothing-item-img item-2"
+                    src="/assets/img/jeans.JPG"
+                    alt="jeans"
+                  />
+                  <a
+                    href="https://www.carhartt-wip.com/en/men-denim"
+                    target="_blank"
+                    >Buy it!</a
+                  >
+                  <div class="clothes__img-box__discount">SALES</div>
+                </div>
+              </li>
+              <li class="clothes__img-box">
                 <img
                   class="clothes__clothing-item-img item-3"
                   src="/assets/img/dress.jpg"
@@ -188,8 +203,20 @@
                   target="_blank"
                   >Buy it!</a
                 >
-              </div>
-            </div>
+              </li>
+              <li class="clothes__img-box">
+                <img
+                  class="clothes__clothing-item-img item-3"
+                  src="/assets/img/dress.jpg"
+                  alt="dress"
+                />
+                <a
+                  href="https://www.ysl.com/en-en/saint-laurent-women/ready-to-wear/dresses-and-skirts"
+                  target="_blank"
+                  >Buy it!</a
+                >
+              </li>
+            </ul>
             <div class="all-items-link">
               <a href="/pages/products.html">Show all items</a>
             </div>
@@ -316,5 +343,18 @@
       </div>
       <div class="phone">Phone: +(373)000 - XXX - 777</div>
     </section>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/script.js"></script>
   </body>
 </html>
