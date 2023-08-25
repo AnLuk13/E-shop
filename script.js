@@ -4,8 +4,8 @@ $(document).ready(() => {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 3,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     prevArrow: `<svg style="
     position: absolute;

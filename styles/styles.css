@@ -7,6 +7,10 @@ html {
   scroll-padding-top: 65px;
 }
 
+.hidden {
+  display: none;
+}
+
 ul .slick-dots {
   position: relative;
   display: flex;
@@ -90,6 +94,7 @@ body {
   text-decoration: none;
   background-color: #95928e;
   transition: 0.3s ease;
+  border: none;
 }
 
 .nav-bar-links__link:hover {
