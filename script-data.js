@@ -36,8 +36,8 @@ if (
         localStorage.setItem("localData", JSON.stringify(userData));
       }
     } else {
-      sessionStorage.removeItem("userData");
-      localStorage.removeItem("localData");
+      sessionStorage.removeItem("userData"); //sessionStorage.clear();
+      localStorage.removeItem("localData"); //localStorage.clear();
       window.location.reload();
       registerLink.textContent = "Register";
     }
@@ -53,9 +53,22 @@ if (
   document.querySelector("#register-link").classList.remove("hidden");
 }
 
-const getData = localStorage.getItem("userData");
+function initMap() {
+  const location = { lat: 47.00367, lng: 28.907089 };
+  const mapSelector = document.getElementById("map");
+  map = new google.maps.Map(mapSelector, {
+    zoom: 6,
+    center: location,
+  });
+  const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+  });
+}
 
-const parseData = JSON.parse(getData);
+// const getData = localStorage.getItem("userData");
+
+// const parseData = JSON.parse(getData);
 
 // window.addEventListener("beforeunload", function (event) {
 //   event.returnValue = "Leave now?";

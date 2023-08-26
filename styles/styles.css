@@ -431,6 +431,11 @@ video {
   font-weight: 600;
 }
 
+.map__container {
+  width: 100%;
+  height: 300px;
+}
+
 .bottom-bar {
   margin: auto;
   align-items: center;
