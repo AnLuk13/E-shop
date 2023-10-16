@@ -23,7 +23,7 @@ if (
   navBar[0].insertBefore(logOut, navBar[0].firstChild);
 
   const registerLink = document.querySelector("#register-link");
-  registerLink.textContent = "Log in";
+  // registerLink.textContent = "Log in";
 
   logOut.addEventListener("click", (e) => {
     const shouldSave = confirm(`Save login data?`);
@@ -32,6 +32,7 @@ if (
     registerLink.classList.remove("hidden");
 
     if (shouldSave) {
+      registerLink.textContent = "Log in";
       if (!localData) {
         localStorage.setItem("localData", JSON.stringify(userData));
       }
@@ -39,7 +40,7 @@ if (
       sessionStorage.removeItem("userData"); //sessionStorage.clear();
       localStorage.removeItem("localData"); //localStorage.clear();
       window.location.reload();
-      registerLink.textContent = "Register";
+      // registerLink.textContent = "Register";
     }
   });
 

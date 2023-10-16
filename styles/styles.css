@@ -8,7 +8,7 @@ html {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 ul .slick-dots {
@@ -473,6 +473,11 @@ video {
 }
 
 @media screen and (max-width: 830px) {
+  .nav-bar-links__link {
+    display: flex;
+    align-items: center;
+  }
+
   .clothes {
     width: 100%;
     height: auto;
