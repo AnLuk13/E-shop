@@ -497,6 +497,18 @@ video {
 }
 
 @media screen and (max-width: 685px) {
+  main,
+  .map,
+  #about,
+  #contacts,
+  .bottom-bar {
+    padding: 0 10px;
+  }
+
+  q {
+    text-align: center;
+  }
+
   .welcome-content {
     flex-wrap: wrap;
     justify-content: center;
@@ -529,8 +541,8 @@ video {
   }
 
   .clothes__img-box {
-    width: 230px;
-    height: 300px;
+    width: 180px;
+    height: 250px;
     flex-shrink: 1;
     position: relative;
     overflow: hidden;
@@ -538,8 +550,8 @@ video {
   }
 
   .clothes__clothing-item-img {
-    height: 300px;
-    width: 230px;
+    height: 250px;
+    width: 180px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border: 1px solid #95928e;
   }
@@ -616,6 +628,23 @@ video {
     opacity: 0;
     z-index: 300;
     padding: 15px 0;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .bottom-bar {
+    margin: 0;
+    width: 100%;
+  }
+
+  .copyrights {
+    font-size: 0.8rem;
+  }
+
+  .phone {
+    font-size: 0.8rem;
   }
 
   #check {

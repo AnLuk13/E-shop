@@ -15,7 +15,7 @@ if (
     safeData.email &&
     safeData.checkbox)
 ) {
-  location.href = "../pages/index.html";
+  location.href = "/index.html";
 } else {
   const form = document.querySelector("#form");
 
@@ -37,7 +37,7 @@ if (
 
     if (username && lastname && password && email && checkbox) {
       sessionStorage.setItem("userData", JSON.stringify(data));
-      location.href = "../pages/index.html";
+      location.href = "/index.html";
     }
   });
 }
