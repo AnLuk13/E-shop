@@ -25,6 +25,17 @@ if (
   const registerLink = document.querySelector("#register-link");
   // registerLink.textContent = "Log in";
 
+  document.querySelector("#second-register-link").classList.add("hidden");
+  const secNavBarUL = document.querySelector(".second-nav-bar ul");
+  const secLogOut = document.createElement("li");
+  const secButton = document.createElement("button");
+  secButton.classList.add("second-navbar-link");
+  secButton.textContent = "Log Out";
+  secLogOut.appendChild(secButton);
+  secNavBarUL.insertBefore(secLogOut, secNavBarUL.firstChild);
+
+  const secRegisterLink = document.querySelector("#second-register-link");
+
   logOut.addEventListener("click", (e) => {
     const shouldSave = confirm(`Save login data?`);
 
@@ -33,6 +44,25 @@ if (
 
     if (shouldSave) {
       registerLink.textContent = "Log in";
+      if (!localData) {
+        localStorage.setItem("localData", JSON.stringify(userData));
+      }
+    } else {
+      sessionStorage.removeItem("userData"); //sessionStorage.clear();
+      localStorage.removeItem("localData"); //localStorage.clear();
+      window.location.reload();
+      // registerLink.textContent = "Register";
+    }
+  });
+
+  secLogOut.addEventListener("click", (e) => {
+    const shouldSave = confirm(`Save login data?`);
+    const secAnchor = document.querySelector(".second-nav-bar ul li a");
+    secAnchor.textContent = "Log in";
+    secLogOut.classList.add("hidden");
+    secRegisterLink.classList.remove("hidden");
+
+    if (shouldSave) {
       if (!localData) {
         localStorage.setItem("localData", JSON.stringify(userData));
       }

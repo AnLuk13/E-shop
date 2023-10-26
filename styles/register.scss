@@ -33,13 +33,16 @@ body {
 }
 
 .registration-form {
-  max-width: 400px;
+  padding: 0 10px;
+  max-width: 95%;
+  width: 400px;
   margin: 0 auto;
   animation-name: reg-form;
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   position: relative;
+  box-sizing: border-box;
 }
 
 @keyframes reg-form {
@@ -57,14 +60,16 @@ label {
 }
 
 input {
-  height: 3vh;
-  width: 97%;
+  height: 5vh;
+  width: 100%;
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .terms {
+  align-items: center;
   display: flex;
   gap: 10px;
 }

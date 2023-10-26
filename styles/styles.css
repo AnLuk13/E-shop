@@ -130,14 +130,17 @@ body {
   list-style-position: inside;
 }
 
-.second-nav-bar ul li a {
+.second-navbar-link {
   color: white;
   text-decoration: none;
   transition: 0.3s ease;
   font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.second-nav-bar ul li a:hover {
+.second-navbar-link:hover {
   color: #7f7265;
 }
 
@@ -593,12 +596,12 @@ video {
   .social-media {
     width: 120%;
   }
-
+  /* 
   .item-1,
   .item-2,
   .item-3 {
     object-fit: cover;
-  }
+  } */
 
   .checkbox-container {
     display: flex;
